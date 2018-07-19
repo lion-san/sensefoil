@@ -38,6 +38,34 @@ a {
   margin-top: 80px;
 }
 
+
+/*左右の矢印の色を変える*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+/*左右の矢印の位置を変える*/
+.slick-next {
+    right: 20px;
+    z-index: 99;
+}
+.slick-prev {
+     left: 15px;
+    z-index: 100;
+}
+/*スライド数のドットの色を変える*/
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+}
+/*スライド画像の横幅可変*/
+img {
+    max-width: 100%;
+     height: auto;
+}
+ 
+
+
 .wslab-link {
   display: inline-block;
   padding: 22px 80px;
@@ -187,6 +215,10 @@ a {
   background-repeat: no-repeat;
   background-size: 309px auto;
   background-position: center bottom;
+}
+
+.wslab-section.app-dl {
+  text-align: center;
 }
 
 .wslab-section.wslab-contact {
@@ -1410,6 +1442,9 @@ a {
   .wslab-section .wslab-flex-impressions-box .wslab-impressions {
     font-size: 1.8rem;
   }
+  .wslab-section.app-dl {
+    text-align: center;
+  }
   .wslab-section.wslab-product, .wslab-section.wslab-partner, .wslab-section.wslab-contact {
     height: 250px;
     padding: 0;
@@ -1556,6 +1591,9 @@ a {
   }
   .wslab-section > div.wslab-form-wrapper .wslab-section-label {
     font-size: 1.6rem;
+  }
+  .wslab-section.app-dl {
+    text-align: center;
   }
   .wslab-section.wslab-product, .wslab-section.wslab-contact {
     height: 200px;
