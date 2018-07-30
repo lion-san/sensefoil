@@ -34,10 +34,104 @@
   <meta name="twitter:description" content="Windsurfing Labは、セーリングスキルや位置情報を可視化するセンサーを開発し､選手のスキルアップのための分析や、観客へのリアルタイムレース配信を行うサービスを提供します。">
   <meta name="twitter:image" content="./img/ogptag.png">
 
-  <script src="./js/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.js'></script>
+  <link rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.css'/>
+
+<!--  <script src="./js/jquery-3.1.1.min.js" type="text/javascript"></script>-->
   <script src="./js/wslab.js" type="text/javascript"></script>
+  <script src="./js/slick.js" type="text/javascript"></script>
+  <script src="./js/slick.min.js" type="text/javascript"></script>
+  <script src="./js/jquery.js" type="text/javascript"></script>
+
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/wslab.css">
+  <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    .slider {
+        width: 85%;
+        margin: 100px;
+    }
+    .slick-slide {
+      margin: 0px 20px;
+    }
+    .slick-slide img {
+      width: 100%;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: white;
+    }
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    .slick-active {
+      opacity: .5;
+    }
+    .slick-current {
+      opacity: 1;
+    }
+    .slide_1 {
+      position: relative;
+    }
+    .slide_2 {
+      position: relative;
+    }
+    .movie1{
+      position: absolute;
+      left: 5%;
+      bottom: 15%;
+    }
+    .movie2{
+      position: absolute;
+      left: 5%;
+      bottom: 15%;
+    }
+    .movie3{
+      position: absolute;
+      left: 5%;
+      bottom: 15%;
+    }
+    .movie4{
+      position: absolute;
+      right: 45%;
+      bottom: 12%;
+    }
+    textarea{
+      width:100%;
+      height:100px;
+      resize:vertical;
+    }
+  </style>
+
+  <script>
+   $(document).on('ready', function() {
+     $(".slider").slick({
+       dots: true,           <!-- スライダーの下のページ送りを表示するか否か -->
+       infinite: true,       <!-- 無限にスライドできるようにするか否か -->
+       arrows: true,         <!-- スライダーの左右に「進む」「戻る」ボタンをつけるか否か -->
+       cssEase:'ease-in',    <!-- スライド切り替え時のアニメーションを指定 -->
+       draggable: true,      <!-- ドラッグが可能か否か -->
+       speed: 300,           <!-- スライド切り替え時の時間を指定(ミリ秒) -->
+       autoplay: true,       <!-- 自動再生するか否か -->
+       autoplaySpeed: 4000,  <!-- 自動再生時の移動までの時間(ミリ秒) -->
+     });
+   });
+   </script>
+   <script>
+   window.addEventListener("beforeunload", function (e) {
+     var confirmationMessage = "問い合わせ入力内容を破棄します。";
+     e.returnValue = confirmationMessage;
+     return confirmationMessage;
+   });
+   </script>
 </head>
 
 <body class="wslab-gullcast">
@@ -70,28 +164,31 @@
     </a>
   </header>
 
-    <div class="wslab-main-area">
-    <section class="wslab-title-top">
-      <div class="wslab-title-top-inner">
-        <img src="./img/title-logo-gullcast.svg" alt="GULLCAST">
-        <h3 class="wslab-title">GULLCAST</h3>
-        <p class="wslab-sub-title">Watersports navigation system</p>
-
-		<br>
-
-        <a class="wslab-link" href="mailto:fj-windsurfinglab@dl.jp.fujitsu.com?subject=WindsurfingLab_GULLCAST&body=【氏名】%0D%0A【国籍】%0D%0A【カテゴリ】%0D%0A　購入希望/協業/メディア/その他 %0D%0A %0D%0A【お問い合わせ内容】">お問い合わせ</a>
-
+  <div class="wslab-main-area">
+    <section class="lazy slider">
+      <div class="slide_1">
+        <div style="width: 100%; text-align: center; color: rgb(30, 30, 255); font-size: 35px;">WindSurfing</div>
+        <img src="./img/img_01_wind-surfing.jpg">
       </div>
-      <div class="wslab-top-attention">
-        <p><br>現在、一部ユーザーと共にトライアルを実施しています。 <br>詳しい製品情報をご希望の方は、ページ下部のアドレスからお問い合わせください
-        </p>
-        <a id="wslab-scroll-contact">
-          <img src="./img/icon-arrow.svg" alt="お問い合わせへ移動">
-        </a>
+
+      <div class="slide_2">
+        <div style="width: 100%; text-align: center; color: rgb(255, 30, 255); font-size: 35px;">SUP</div>
+        <img src="./img/img_02_sup.jpg">
       </div>
-    </section>
 
+      <div class="slide_3">
+        <div style="width: 100%; text-align: center; color: rgb(255, 30, 30); font-size: 35px;">yacht</div>
+        <img src="./img/img_03_yoht.jpg">
+      </div>
 
+    <div class="slide_4">
+      <div style="width: 100%; text-align: center; color: rgb(30, 255, 30); font-size: 35px;">drone</div>
+      <img src="./img/img_04_drone.jpg">
+      <a href="https://www.youtube.com/embed/l9PxbRrL5iQ" data-lity="data-lity">
+        <img class="movie4" src="./img/movie_04_drone.gif" style="width:1.5%; height:12%;">
+      </a>
+    </div>
+  </section>
 
     <section class="wslab-section wslab-partner">
       <div>
@@ -322,7 +419,20 @@
         <section class="wslab-section wslab-contact">
       <div class="wslab-form-wrapper">
         <h5 class="wslab-section-label">購入や詳しい製品情報をご希望の方は、下記連絡先へお問い合わせください</h5>
-        <a class="wslab-link wslab-wide" href="mailto:fj-windsurfinglab@dl.jp.fujitsu.com?subject=WindsurfingLab_GULLCAST&body=【氏名】%0D%0A【国籍】%0D%0A【カテゴリ】%0D%0A　購入希望/協業/メディア/その他 %0D%0A %0D%0A【お問い合わせ内容】">fj-windsurfinglab@dl.jp.fujitsu.com</a>
+            <form method="post" action="mailto:to-kanzaki@jp.fujitsu.com" data-lity="data-lity">
+              <a class="wslab-link wslab-wide" >問い合わせフォーム入力<br></a>
+              <fieldset>
+                <label>氏名</label>
+                <input type="text" name="name" autocomplete="name" placeholder="入力　例"><br>
+                <label>E-MAIL</label>
+                <input type="email" name="email" autocomplete="email" placeholder="example@abc.jp"><br>
+                <label>電話番号</label>
+                <input type="tel" name="tel" autocomplete="tel" placeholder="0312345678"><br>
+                <label>問い合わせ内容</label>
+                <input type="message-body" name="tel" maxlength="400" autocomplete="tel" placeholder="問い合わせ内容を入力してください"><br>
+                <input type="submit">
+              </fieldset>
+            </form>
       </div>
     </section>
     <section class="wslab-footer-link">
