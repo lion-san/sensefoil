@@ -38,32 +38,10 @@ a {
   margin-top: 80px;
 }
 
-
-/*左右の矢印の色を変える*/
-.slick-prev:before,
-.slick-next:before {
-    color: #000;
-}
-/*左右の矢印の位置を変える*/
-.slick-next {
-    right: 20px;
-    z-index: 99;
-}
-.slick-prev {
-     left: 15px;
-    z-index: 100;
-}
-/*スライド数のドットの色を変える*/
-.slick-dots li.slick-active button:before,
-.slick-dots li button:before {
-    color: #fff;
-}
-/*スライド画像の横幅可変*/
 img {
     max-width: 100%;
      height: auto;
 }
- 
 
 
 .wslab-link {
@@ -215,6 +193,7 @@ img {
   background-repeat: no-repeat;
   background-size: 309px auto;
   background-position: center bottom;
+  margin-bottom: 5%;
 }
 
 .wslab-section.app-dl {
@@ -222,7 +201,7 @@ img {
 }
 
 .wslab-section.wslab-contact {
-  height: 400px;
+  height: 100px;
 }
 
 .wslab-section > div {
@@ -722,6 +701,62 @@ img {
   padding-right: 0;
 }
 
+.slider {
+    width: 85%;
+    margin: 100px;
+}
+.slick-slide {
+  margin: 0px 20px;
+}
+.slick-slide img {
+  width: 100%;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+}
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+.slick-active {
+  opacity: .5;
+}
+.slick-current {
+  opacity: 1;
+}
+.slide_1 {
+  position: relative;
+}
+.slide_2 {
+  position: relative;
+}
+.movie1{
+  position: absolute;
+  right: 5%;
+  bottom: 12%;
+}
+.movie2{
+  position: absolute;
+  left: 5%;
+  bottom: 15%;
+}
+.movie3{
+  position: absolute;
+  left: 5%;
+  bottom: 15%;
+}
+.movie4{
+  position: absolute;
+  right: 45%;
+  bottom: 12%;
+}
+  textarea{
+    width:100%;
+    height:100px;
+    resize:vertical;
+  }
+
 /************************
           header
 ************************/
@@ -841,6 +876,33 @@ img {
 
 .wslab-switch-language > li.wslab-selected a {
   opacity: 1.0;
+}
+
+.wslab-form ul li{
+  list-style: none;
+}
+
+.wslab-form li.msg {
+    margin-bottom: 10px;
+}
+
+.wslab-form label {
+  font-size: 18px;
+  margin-right: 15px;
+  width: auto;
+  float: left;
+}
+
+.wslab-form ul {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.wslab-form input#button {
+    display: block;
+    font-size: 20px;
+    margin: 0 auto;
 }
 
 /************************
@@ -1025,6 +1087,7 @@ img {
   .wslab-section.wslab-about {
     text-align: center;
     background-image: none;
+    margin-bottom: 3%;
   }
   .wslab-section.wslab-about .wslab-flex-box {
     flex-direction: column;
@@ -1446,7 +1509,7 @@ img {
     text-align: center;
   }
   .wslab-section.wslab-product, .wslab-section.wslab-partner, .wslab-section.wslab-contact {
-    height: 250px;
+    height: 200px;
     padding: 0;
   }
   .wslab-section.wslab-padding-small {
