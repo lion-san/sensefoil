@@ -701,16 +701,12 @@ img {
 }
 
 .slider {
-  width: 85%;
-  margin: 100px;
+  width: 100%;
+  margin: 0;
 }
 
 .slick-slide {
-  margin: 0px 20px;
-}
-
-.slick-slide img {
-  width: 100%;
+  margin: 0px 0px;
 }
 
 .slick-prev:before, .slick-next:before {
@@ -730,32 +726,39 @@ img {
   opacity: 1;
 }
 
-.slide_1 {
+.slide_1, .slide_2, .slide_3, .slide_4{
   position: relative;
 }
 
-.slide_1 img {
+.slide_1>img, .slide_2>img, .slide_3>img, .slide_4>img {
   position: absolute;
+  top:5%;
 }
 
 .wslab-title-top-inner img {
   position: relative;
-  width: auto;
-  height: auto;
-  top: 0;
+  top: 18%;
   left: 0;
   right: 0;
   bottom: 0;
-  margin :0 auto;
-  margin-top: 5%;
+  margin: 0 auto;
 }
 
-.wslab-title-top-inner h3 {
+.wslab-title-top-inner a {
   position: relative;
   top: 10%;
   left: 0;
   right: 0;
   bottom: 0;
+  margin: 0 auto;
+}
+.wslab-title-top-inner h3 {
+  position: relative;
+  top: 15%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
 }
 
 .wslab-title-top-inner p {
@@ -766,44 +769,52 @@ img {
   bottom: 0;
 }
 
-.wslab-title-top-inner a {
+.wslab-title-top-inner h5 {
   position: relative;
-  top: 20%;
+  font-size: 25px;
+  font-weight: normal;
+  top: 25%;
   left: 0;
   right: 0;
   bottom: 0;
 }
 
-.wslab-title-top-inner h5 {
-  font-size: 18px;
+.wslab-title-top-inner h4 {
+  position: relative;
+  font-size: 22px;
   font-weight: normal;
+  top: 80%;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .movie1 {
   position: absolute;
   top: 45%;
-  right: 3%;
+  right: 5%;
+  width: 15%;
+  height: 15%;
 }
 
 .movie2 {
-  position: absolute;
+  position: relative;
   left: 5%;
   bottom: 15%;
 }
 
 .movie3 {
-  position: absolute;
+  position: relative;
   left: 5%;
   bottom: 15%;
 }
 
 .movie4 {
-  position:absolute;
-  top: 60%;
-  right: 0;
-  left: 8%;
-  bottom: 0;
-  margin: 10px auto;
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  width: 15%;
+  height: 15%;
 }
 
 textarea {
@@ -960,6 +971,11 @@ textarea {
   margin: 0 auto;
   margin-top: 20px;
 }
+ .wslab-form input {
+   width: auto;
+   height: auto;
+   overflow: auto;
+ }
 
 .wslab-form input#button {
   display: block;
@@ -1012,6 +1028,7 @@ textarea {
 
 .wslab-title-top-inner {
   position: relative;
+  height: 772px;
   width: 1300px;
   z-index: 1;
   text-align: center;
@@ -1024,7 +1041,7 @@ textarea {
 }
 
 .wslab-title-top-inner .wslab-sub-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 2.8rem;
 }
 
@@ -1050,6 +1067,7 @@ textarea {
   width: 45px;
   height: 40px;
   margin-left: 40px;
+  top: 50%;
 }
 
 .wslab-title-top .wslab-top-attention>a>img {
@@ -1181,6 +1199,26 @@ textarea {
   .wslab-title-top-inner {
     width: 100%;
     padding: 0 100px;
+  }
+  .wslab-title-top-inner img {
+    width: 80% auto;
+    height: 80% auto;
+  }
+  .wslab-title-top-inner h3 {
+    width: 80% auto;
+    height: 80% auto;
+  }
+  .wslab-title-top-inner p {
+    width: 80% auto;
+    height: 80% auto;
+  }
+  .wslab-title-top-inner a {
+    width: 80% auto;
+    height: 80% auto;
+  }
+  .wslab-title-top-inner h5 {
+    font-size: 15px;
+    font-weight: normal;
   }
   .wslab-title-top-inner .wslab-title {
     font-size: 6.0rem;
@@ -1655,10 +1693,9 @@ textarea {
   .wslab-title-top {
     height: calc(100vh - 140px);
     min-height: 500px;
-    background-image: url("../img/bg-crewing-sp.jpg");
   }
-  .slide_1>img {
-    width: 35px;
+  .slide_1>img, .slide_2>img, .slide_3>img, .slide_4>img {
+    width: auto;
     height: auto;
   }
   .wslab-title-top-inner .wslab-title {

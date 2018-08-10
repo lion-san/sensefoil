@@ -38,7 +38,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.js'></script>
   <link rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.css'/>
 
-<!--  <script src="./js/jquery-3.1.1.min.js" type="text/javascript"></script>-->
+<!--  <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>-->
   <script src="./js/wslab.js" type="text/javascript"></script>
   <script src="./js/slick.js" type="text/javascript"></script>
   <script src="./js/slick.min.js" type="text/javascript"></script>
@@ -57,7 +57,7 @@
        arrows: true,         <!-- スライダーの左右に「進む」「戻る」ボタンをつけるか否か -->
        cssEase:'ease-in',    <!-- スライド切り替え時のアニメーションを指定 -->
        draggable: true,      <!-- ドラッグが可能か否か -->
-       speed: 300,           <!-- スライド切り替え時の時間を指定(ミリ秒) -->
+       speed: 100,           <!-- スライド切り替え時の時間を指定(ミリ秒) -->
        autoplay: true,       <!-- 自動再生するか否か -->
        autoplaySpeed: 5000,  <!-- 自動再生時の移動までの時間(ミリ秒) -->
      });
@@ -96,62 +96,46 @@
   </header>
 
   <div class="wslab-main-area">
-
-<!--
-    <section class="wslab-title-top">
-      <div class="wslab-title-top-inner">
-              <img src="./img/title-logo-gullcast.svg" alt="GULLCAST">
-              <h3 class="wslab-title">GULLCAST</h3>
-              <p class="wslab-sub-title">Watersports navigation system</p>
-      		<br>
-              <a class="wslab-link" href="#contact">お問い合わせ</a>
-      </div>
-            <div class="wslab-top-attention">
-              <p><br>現在、一部ユーザーと共にトライアルを実施しています。 <br>詳しい製品情報をご希望の方は、ページ下部のアドレスからお問い合わせください
-              </p>
-              <a id="wslab-scroll-contact">
-                <img src="./img/icon-arrow.svg" alt="お問い合わせへ移動">
-              </a>
-            </div>
-          </section>
-        -->
-
           <section class="wslab-title-top">
           <div class="lazy slider">
             <div class="slide_1">
-              <img src="./img/bg-gullcast.jpg">
-              <a href="https://www.youtube.com/embed/CauMNPOyJbc?rel=0" allowfullscreen data-lity="data-lity">
-                <img class="movie1" src="./img/movie_01_windsurfing.gif" style="width:20%; height:25%;">
+              <img src="./img/img_01_wind-surfing.jpg">
+              <a href="https://www.youtube.com/embed/CauMNPOyJbc?rel=0" data-lity="data-lity">
+                <img class="movie1" src="./img/movie_01_windsurfing.gif">
               </a>
               <div class="wslab-title-top-inner">
                 <img src="./img/title-logo-gullcast.svg" alt="GULLCAST">
-              </div>
-              <div class="wslab-title-top-inner">
                 <h3 class="wslab-title">GULLCAST</h3>
-              </div>
-              <div class="wslab-title-top-inner">
                 <p class="wslab-sub-title">Watersports navigation system</p>
-                <a class="wslab-link" href="#contact">お問い合わせ</a>
-                <h5><br>現在、一部ユーザーと共にトライアルを実施しています。 <br>詳しい製品情報をご希望の方は、ページ下部のアドレスからお問い合わせください
-                </h5>
-              </div>
-              <div class="wslab-top-attention">
-              </div>
+                <h5>現在、一部ユーザーと共にトライアルを実施しています。<br>詳しい製品情報をご希望の方は、ページ下部のアドレスからお問い合わせください</h5>
+              <div class="wslab-title-top-inner">
+              <a class="wslab-link" href="#contact">お問い合わせ</a>
+            </div>
+          </div>
             </div>
 
             <div class="slide_2">
-              <img src="./img/img_02_sup.jpg">
+              <img src="./img/img_02_sup.jpg" alt="SUPイメージ">
+              <div class="wslab-title-top-inner">
+                <h4>ロングディスタンスレースのリアルタイム位置把握</h4>
+              </div>
             </div>
 
             <div class="slide_3">
-              <img src="./img/img_03_yoht.jpg">
+              <img src="./img/img_03_yoht.jpg" alt="ヨットイメージ">
+              <div class="wslab-title-top-inner">
+                <h4>あらゆるウォータースポーツイベントへの対応</h4>
+              </div>
             </div>
 
           <div class="slide_4">
             <img src="./img/img_04_drone.jpg">
             <a href="https://www.youtube.com/embed/l9PxbRrL5iQ?rel=0" data-lity="data-lity">
-              <img class="movie4" src="./img/movie_04_drone.gif" style="width:2%; height:18%;">
+              <img class="movie4" src="./img/movie_04_drone.gif">
             </a>
+            <div class="wslab-title-top-inner">
+              <h4>位置情報と連携したナビゲーションにより広域スポーツのドローン撮影が飛躍的に手軽となる<br>ドローンの撮影ナビゲーションシステム</h4>
+            </div>
           </div>
         </div>
       </section>
@@ -173,7 +157,7 @@
     </div>
     </section>
 
-    <iframe src="https://t80-sup.herokuapp.com/"  width="90%" height="560" name="map" align="center">MAP</iframe>
+    <iframe src="https://t80-sup.herokuapp.com/map_only.html"  width="90%" height="560" name="map" align="center">MAP</iframe>
 
     <section class="wslab-section wslab-about">
     <div>
@@ -387,16 +371,16 @@
       <section class="wslab-section wslab-about">
         <div class="wslab-section-label">
           <h5 id="contact">Contact</h5>
-          <h>購入や詳しい製品情報をご希望の方は、下記連絡先へお問い合わせください</h>
+          <h>購入や詳しい製品情報をご希望の方は、下記連絡先までお問い合わせください</h>
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSchwv88MSyA5Oj8yzBX1nvjT5JxDqTZC8YEmQ7DgZEOLNu81g/formResponse" class="wslab-form">
           <ul>
             <li>
               <label>Your Name ※</label>
-              <input type="text" name="entry.1545167718" autocomplete="name" required>
+              <input type="text" name="entry.1545167718" autocomplete="name" maxlength="30" rows="1" required>
             </li>
             <li>
               <label>Email　※</label>
-              <input type="email" name="entry.101576747" autocomplete="email" placeholder="example@abc.com" required>
+              <input type="email" name="entry.101576747" autocomplete="email" placeholder="example@abc.com" maxlength="50" rows="1" required>
             </li>
             <li>
             <label>Your Country　※</label>
