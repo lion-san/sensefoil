@@ -218,7 +218,32 @@ img {
 }
 
 .wslab-section.app-dl {
+  background-color: #e0e5ea;
+  color: black;
+}
+
+.wslab-section.app-dl h5{
+  /* color: red; */
   text-align: center;
+}
+
+.wslab-section.app-dl .app-label{
+  font-size: 1.8rem;
+  width: 80px;
+}
+
+.wslab-section.app-dl .table{
+  margin: 0px auto;
+}
+
+.wslab-section.app-dl .app-table{
+  border-spacing: 5px;
+  border-collapse: separate;
+  table-layout: fixed;
+}
+
+.wslab-section.app-dl .app-table td {
+  width: 80px;
 }
 
 .wslab-section.wslab-contact {
@@ -266,6 +291,11 @@ img {
 .wslab-section.wslab-sensors .wslab-flex-box-middle {
   flex: 0 0 400px;
   align-self: stretch;
+}
+
+.wslab-section.wslab-product, .wslab-section.wslab-notify {
+  background-color: #e0e5ea;
+  color: #0b223c;
 }
 
 .wslab-section.wslab-product, .wslab-section.wslab-partner {
